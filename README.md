@@ -21,15 +21,27 @@ TaskFlow is a modern and dynamic to-do list web application designed to help use
 - **date-fns** for date manipulation
 - **localStorage** for persistent data storage
 
-### How It Works
+## How It Works
 
 The TaskFlow app consists of two main components: the **app logic** and the **user interface.**
 - **App Logic**: The app's functionality (creating and managing tasks, updating priorities, marking tasks complete, and saving/loading data to/from localStorage) is handled by JavaScript modules. These modules are separated from the UI code to ensure clean and maintainable code.
 - **User Interface**: The interface is designed to be simple and intuitive. Users can create tasks, view tasks in various projects, and interact with tasks using various options (edit, delete, mark complete).
 
-## Local Storage Integration
+### Local Storage Integration
 
 TaskFlow uses `localStorage` to persist all user-created tasks and projects. On first load, the app checks for existing data in `localStorage`, and if none is found, it initializes with default values. All changes made to tasks or projects are automatically saved back to `localStorage` to maintain data across sessions.
 
-## Data Struct
+### Data Structure Example
+
+Each project in TaskFlow is an object that holds an array of task object.
+```json
+{
+    "id": 1,
+    "title": "Buy groceries",
+    "description": "Milk, eggs, bread",
+    "dueDate": "2024-11-20",
+    "priority": "high",
+    "completed": false 
+}
+```
 
