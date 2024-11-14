@@ -45,3 +45,17 @@ Each project in TaskFlow is an object that holds an array of task object.
 }
 ```
 
+### Handling Missing Data
+
+In cases where there is no data in `localStorage` when the app first loads, the application gracefully handles the situation by initializing empty projects and tasks. Users can start adding tasks right away, and their data will be saved going forward.
+
+## Future Enhancements
+
+- **User Authentication**: Allow users to sign in and sync their tasks across different devices.
+- **Task Comments**: Allow users to add comments or attach files to tasks.
+- **Advanced Sorting and Filtering**: Implement advanced features for sorting and filtering tasks based on priority, due date, and completion status.
+- **Notifications:**: Add notifications to alert users of upcoming due dates or overdue tasks.
+
+## Acknowledgements
+- **date-fns**: For handling date and time manipulation.
+- **Webpack**: For bundling the app's assets.
