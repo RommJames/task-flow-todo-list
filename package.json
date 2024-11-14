@@ -1,0 +1,16 @@
+{
+  "name": "task-flow-todo-list",
+  "version": "1.0.0",
+  "description": "TaskFlow is a modern and dynamic to-do list web application designed to help users manage their tasks efficiently. It allows users to create, organize, and track tasks across multiple projects with a smooth user experience. The app supports essential features like task priorities, due dates, and notes, and it offers the flexibility of having multiple projects to keep tasks organized. TaskFlow also leverages localStorage to ensure user data persists even after a page refresh, making it a reliable tool for daily productivity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
