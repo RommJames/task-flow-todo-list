@@ -1,0 +1,75 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Set UI properties / styling */
+:root{
+    /* colors*/
+    --bg-color-light-gray: #F5F5F5 ;
+    --bg-color-light-blue: #E0F7FA;    
+    --text-color-dark: #1A1A2E;
+    /* accent color */
+    --accent-color-blue: #2196F3;
+    --accent-color-green: #66BB6A;
+    --accent-color-orange: #FF9800;
+    --accent-color-red: #F44336;
+    --accent-color-low-red: #ffbeb9;
+    /* Priotity Colors */
+    --low-priority-green: #81C784;
+    --low-priority-blue: #64B5F6;
+    --medium-priority-amber: #FFB74D;
+    --medium-priority-yellow: #FFEB3B;
+    --high-priority-red: #D32F2F;
+    /* Fonts */
+    --body-text: "Roboto", sans-serif;    
+    --btn-text: "Poppins", sans-serif;
+}
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding*/
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+/* 3. Add accessible line-height */
+line-height: 1.5;
+/* 4. Improve text rendering */
+-webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+text-wrap: balance;
+}
+
+/*
+9. Create a root stacking context
+*/
+#root, #__next {
+isolation: isolate;
+}
