@@ -199,20 +199,45 @@ nav li:not(.li-active):hover{
     margin-right: 15px;
 }
 .bottom-header{
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     padding: 5px;
+    align-items: center;
 }
 
-.bottom-header:hover{
-    text-indent: 10px;
+.bottom-header:hover{    
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+.bottom-header:hover > h4{
+    text-indent: 20px;
+}
 /* Notes */
+
+#notes-value{
+    background-color: var(--accent-color-blue);
+    border-radius: 100%;    
+    margin: 0px 10px;
+    color: white;
+    font-weight: 900;
+    width: 30px;
+    height: 30px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* Description */
+#description-value{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-indent: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.5);
+}
 
 /* Footer */
 footer a:hover, #menu-icon:hover{
