@@ -6,6 +6,71 @@
     <title>TaskFlow</title>
 </head>
 <body>
-    <h1>Task Flow: A Web-Based Todo List App</h1>
+    <!-- For checkbox purposes -->
+    <input type="checkbox" name="menu-icon" id="lbl-menu-icon" class="toggle-btn">
+    <!-- UI -->
+    <header>
+        <img src="favicon.png" alt="logo" class="logo">
+        <h3>TaskFlow - A Web-Based Todo App</h3>
+    </header>
+    <div id="side-bar">
+        <div id="side-bar-btns">
+            <label for="lbl-menu-icon">
+                <img src="media/icons/menu.svg" alt="menu-icon" id="menu-icon">
+            </label>            
+            <nav>
+                <ul>
+                    <li id="li-projects" class="li-active"> Projects </li>
+                    <li id="li-everyday-task">Everyday Tasks</li>
+                    <li id="li-listing">Listing</li>
+                    <li id="li-schedules">Schedules</li>
+                    <li id="li-all-tasks">All Tasks</li>
+                </ul>
+            </nav>
+        </div>
+        <footer>
+            <a href="https://rommjames.github.io/About-Me/" target="_blank">
+                <img src="media/rj-logo-3-nobg.png" alt="my-logo" class="logo">
+            </a>
+        </footer>
+    </div>
+    <div id="notes">
+        <div class="bottom-header">
+            <h4>Notes: </h4>
+        </div>
+    </div>
+    <div id="description">
+        <div class="bottom-header">
+            <h4>Description: </h4>                        
+        </div>
+    </div>
+    <main>
+        <div class="card">
+            <h2 class="card-title">
+                Project Name
+            </h2>
+            <p class="card-description"> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quidem ad voluptates reprehenderit ratione voluptatum quam aut odit! Sit facere itaque facilis harum sunt unde repellat laborum, impedit enim ut?
+            </p>
+            <div class="task-properties">
+                <div id="due-date">
+                    Due Date:
+                    <span id="due-date-value" class="low">MM/DD/YYYY</span>
+                </div>
+                <div id="priority-level">
+                    Priority:
+                    <span id="priority-level-value" class="low">Low</span>
+                </div>
+            </div>
+            <div class="card-btns">
+                <div class="btn btn-view">
+                    Manage Tasks 
+                </div>
+                <div class="btn btn-delete">
+                    Delete Project
+                </div>
+            </div>
+        </div>     
+    </main>
 </body>
 </html>

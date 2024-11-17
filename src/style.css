@@ -28,6 +28,11 @@
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
 box-sizing: border-box;
+/* Set Fonts */
+font-family: var(--body-text);
+color: var(--text-color-dark);
+/* Set Transition */
+transition: all 0.3s ease-in-out;
 }
 
 /* 2. Remove default margin and padding*/
@@ -41,6 +46,8 @@ body {
 line-height: 1.5;
 /* 4. Improve text rendering */
 -webkit-font-smoothing: antialiased;
+/* set background color */
+background-color: var(--bg-color-light-blue);
 }
 
 /* 5. Improve media defaults */
@@ -72,4 +79,244 @@ text-wrap: balance;
 */
 #root, #__next {
 isolation: isolate;
+}
+
+/* Set Layout */
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 60px 1fr auto auto;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-color-light-gray);
+    padding: 5px;    
+    justify-content: right;
+    /* background-color:#66BB6A; */
+}
+
+#side-bar{
+    background-color: var(--bg-color-light-gray);
+    padding: 10px;
+    grid-column: 1/2;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#notes{
+    grid-row: 3 / 4;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#description{
+    grid-row: 4 / -1;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+main{
+    /* background-color: var(--low-priority-blue); */
+    overflow-y: scroll;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1) inset;
+    /* border-radius: 5px; */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* images / logo */
+.logo{
+    height: 40px;
+}
+
+#menu-icon{
+    width: 50px;
+}
+
+.window-control-icon{
+    width: 20px;    
+}
+
+/* Set Fonts */
+nav *{
+    font-family: var(--btn-text);
+}
+
+/* Header */
+
+/* Side Bar */
+#side-bar-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+nav li{
+    padding: 5px 0px;
+    /* border-top: 2px solid var(--accent-color-blue); */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1)
+}
+
+nav li:not(.li-active):hover{
+    text-indent: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.li-active{
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#lbl-menu-icon:checked ~ #side-bar > #side-bar-btns > nav{    
+    display: none;
+}
+
+/* Notes and Description */
+.window-controls{
+    display: flex;
+    margin-right: 15px;
+}
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.bottom-header:hover{
+    text-indent: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+/* Notes */
+
+
+/* Description */
+
+/* Footer */
+footer a:hover, #menu-icon:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Main */
+main{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
+}
+
+/* Cards */
+.card-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.card{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;    
+    height: 265px;
+}
+
+.card-description{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 5px 0px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* due date */
+#due-date-value{
+    display: inline-block;    
+    padding: 1px 5px;
+}
+
+/* priority level */
+.task-properties{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0px;
+}
+
+#priority-level-value{
+    padding: 1px 15px;
+    display: inline-block;    
+}
+
+.low{
+    color: var(--low-priority-blue);
+    border: 2px solid var(--low-priority-blue); 
+}
+
+/* btns */
+.card-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;    
+    margin-top: 5px;
+}
+
+.btn{    
+    padding: 5px 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 2px;
+}
+
+.btn:hover{
+    transform: scale(0.9);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn-view{
+    background-color: var(--accent-color-green);
+    color: white;
+}
+
+.btn-delete{
+    background-color: var(--accent-color-red);
+    color: white;
+}
+
+/* Checkbox */
+.toggle-btn{
+    position: absolute;
+    appearance: none;
 }
