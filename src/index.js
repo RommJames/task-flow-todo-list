@@ -2,8 +2,7 @@
 
 import "./style.css";
 
-// Templates
-
+// ----- Templates
 // Projects
 {/* <div class="cards-container">
             <div class="card">
@@ -49,11 +48,11 @@ import "./style.css";
                 </p>
                 <div class="task-properties">
                     <div id="due-date">
-                        Due Date:
+                        <b>Due Date:</b>
                         <span id="due-date-value" class="low">MM/DD/YYYY</span>
                     </div>
                     <div id="priority-level">
-                        Priority:
+                       <b>Priority:</b>
                         <span id="priority-level-value" class="low">Low</span>
                     </div>
                 </div>
@@ -208,30 +207,79 @@ import "./style.css";
         </div>
           */}
 
-        //   Notes
+//   Notes Container
 
-    //     <div id="notes-container">            
-    //     <div id="notes-board">
-    //         <div class="notes-header">
-    //             <h2>Notes - Project Name</h2>
-    //             <div class="list-btns">
-    //                 <div class="btn-list-delete">
-    //                     <img src="media/icons/close-circle-outline.svg" alt="delete">
-    //                 </div>
-    //             </div>
-    //         </div>
-    //         <div id="notes-board-list">
-    //             <div class="notes">
-    //                 <div class="list-btns">
-    //                     <div class="btn-list-edit">
-    //                         <img src="media/icons/note-edit-outline.svg" alt="edit">
-    //                     </div>
-    //                     <div class="btn-list-delete">
-    //                         <img src="media/icons/delete-circle-outline.svg" alt="delete">
-    //                     </div>
-    //                 </div>
-    //                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores alias esse aperiam veniam aspernatur, cumque voluptate aliquam deleniti nulla consectetur, hic enim nesciunt odit, numquam libero illo a aliquid!</p>
-    //             </div>               
-    //         </div>                                
-    //     </div>
-    // </div>
+{/* <div id="notes-container">            
+            <div id="notes-board">
+                <div class="notes-header">
+                    <div class="notes-title-header">
+                        <div class="btn-add-notes">
+                            <img src="media/icons/plus-circle.svg" alt="add notes">
+                        </div>
+                        <h2 class="notes-title-header-value">Notes - Project Name</h2>
+                    </div>                    
+                    <div class="list-btns">
+                        <div class="btn-list-delete">
+                            <img src="media/icons/close-circle-outline.svg" alt="delete">
+                        </div>
+                    </div>
+                </div>
+                <div id="notes-board-list">
+                    <div class="notes">
+                        <div class="list-btns">
+                            <div class="btn-list-edit">
+                                <img src="media/icons/note-edit-outline.svg" alt="edit">
+                            </div>
+                            <div class="btn-list-delete">
+                                <img src="media/icons/delete-circle-outline.svg" alt="delete">
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores alias esse aperiam veniam aspernatur, cumque voluptate aliquam deleniti nulla consectetur, hic enim nesciunt odit, numquam libero illo a aliquid!</p>
+                    </div>               
+                </div>                                
+            </div>
+        </div> */}
+
+        // Add Project Form
+        // <div id="add-project-container">
+        //     <form class="add-form">
+        //         <h1 id="add-project-title">Add Project</h1>
+        //         <div class="input-container">
+        //             <label for="input-project-name">
+        //                 <b>Project Name</b>
+        //             </label>
+        //             <input type="text" id="input-project-name" placeholder="Enter Project Name..." required>
+        //         </div>
+        //         <div class="input-container">
+        //             <label for="input-project-name">
+        //                 <b>Project Description</b>
+        //             </label>
+        //             <textarea id="input-project-description" placeholder="Enter Description..."></textarea>
+        //         </div>  
+        //         <div class="task-properties">
+        //             <div id="due-date">
+        //                 <b>Due Date:</b>
+        //                 <input type="date" id="input-date-task">
+        //             </div>
+        //             <div id="priority-level">
+        //                 <b>Priority:</b>
+        //                 <input type="radio" name="priority-level" id="input-priority-low">
+        //                 <label for="input-priority-low" class="low priority-level-option">                            
+        //                     Low
+        //                 </label>
+        //                 <input type="radio" name="priority-level" id="input-priority-medium">
+        //                 <label for="input-priority-medium" class="medium priority-level-option">
+        //                     Medium
+        //                 </label>               
+        //                 <input type="radio" name="priority-level" id="input-priority-high">         
+        //                 <label for="input-priority-high" class="high priority-level-option">                            
+        //                     High
+        //                 </label>                                                
+        //             </div>
+        //         </div>
+        //         <div class="card-btns">
+        //             <input type="submit" class="btn btn-view" value="Add">                                            
+        //             <input type="button" class="btn btn-delete" value="Cancel">                        
+        //         </div>              
+        //     </form>
+        // </div>
