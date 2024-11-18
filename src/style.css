@@ -535,6 +535,22 @@ footer a:hover, #menu-icon:hover{
 #notes-board-list > .notes{
     height: auto;
 }
+
+.notes-title-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-add-notes{
+    width: 40px;
+    margin-right: 5px;
+}
+
+.btn-add-notes:hover{
+    transform: scale(1.1) rotate(180deg);
+    cursor: pointer;
+}
 /* btns */
 .card-btns{
     display: flex;
