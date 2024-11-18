@@ -628,5 +628,22 @@ footer a:hover, #menu-icon:hover{
     font-size: 0.8rem;
     text-overflow: clip;
 }
+
+#side-bar-btns > nav{
+    display: none;
+}
+
+#lbl-menu-icon:checked ~ #side-bar > #side-bar-btns > nav{    
+    display: flex;
+}
+
+.tab-title{
+    transform: scaleX(1);
+}
+
+#lbl-menu-icon:checked ~ header > .tab-title{    
+    transform: scaleX(0);
+}
+
 }
   
