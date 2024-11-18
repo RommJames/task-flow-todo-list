@@ -96,7 +96,7 @@ header{
     gap: 10px;
     background-color: var(--bg-color-light-gray);
     padding: 5px;    
-    justify-content: right;
+    justify-content: space-between;
     flex-wrap: wrap;
     overflow: hidden;
     /* background-color:#66BB6A; */
@@ -170,6 +170,19 @@ nav *{
 }
 
 /* Header */
+.header-logo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tab-title{
+    transform: scaleX(0);
+    transform-origin: left;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 5px solid var(--accent-color-orange);
+}
 
 /* Side Bar */
 #side-bar-btns{
@@ -200,6 +213,10 @@ nav li:not(.li-active):hover{
 
 #lbl-menu-icon:checked ~ #side-bar > #side-bar-btns > nav{    
     display: none;
+}
+
+#lbl-menu-icon:checked ~ header > .tab-title{    
+    transform: scaleX(1);
 }
 
 /* Notes and Description */
@@ -263,6 +280,7 @@ footer a:hover, #menu-icon:hover{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
     position: relative;
     height: 100%;
+    gap: 15px;
 }
 
 /* listing container */
@@ -284,6 +302,7 @@ footer a:hover, #menu-icon:hover{
     align-items: center;
     justify-content: space-between;    
     padding: 5px;   
+    flex-wrap: wrap;
 }
 
 .list-title{
@@ -302,9 +321,10 @@ footer a:hover, #menu-icon:hover{
 
 .list-details{
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 200px auto;
     /* gap: 50px;     */
     text-indent: 10px;
+    width: 65%;
 }
 
 .list-description{
@@ -326,6 +346,14 @@ footer a:hover, #menu-icon:hover{
     flex-basis: 350px;
     min-width: 50px;
     max-width: 60px;    
+    align-items: center;
+}
+
+.list-btns > div:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px var(--accent-color-blue);
+    border-radius: 100px;
 }
 
 .list-btns div{
@@ -335,6 +363,12 @@ footer a:hover, #menu-icon:hover{
 .list-complete *, .project-complete *{
     text-decoration: line-through;
     opacity: 0.5;
+}
+
+.list-due-date{
+    margin: 5px;
+    text-align: left;
+    gap: 5px;
 }
 
 /* Cards */
@@ -368,7 +402,7 @@ footer a:hover, #menu-icon:hover{
 }
 
 /* due date */
-#due-date-value{
+#due-date-value, .due-date-value{
     display: inline-block;    
     padding: 1px 5px;
 }
@@ -390,6 +424,43 @@ footer a:hover, #menu-icon:hover{
     color: var(--low-priority-blue);
     border: 2px solid var(--low-priority-blue); 
 }
+
+/* Manage Tasks */
+#manage-task-container{
+    
+    background-color: white;
+    width: 80%;
+    min-height: 70%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.manage-task-list{
+    margin-top: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.manage-task-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.manage-task-title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.manage-task-title > .checkbox-container{
+    top: -2px;
+}
+
 
 /* btns */
 .card-btns{
@@ -549,4 +620,13 @@ footer a:hover, #menu-icon:hover{
         justify-content: end;        
     }
   }
+
+@media (max-width: 580px) {
+/* Styles for mobile phones */
+.header-logo > h3{
+    display: none;
+    font-size: 0.8rem;
+    text-overflow: clip;
+}
+}
   
