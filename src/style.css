@@ -262,7 +262,18 @@ nav li:not(.li-active):hover{
     text-indent: 5px;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#lbl-description:checked ~ #description #description-value{
+    display: inline-block;
+}
+
+#lbl-description:checked ~ #description .bottom-header{    
+    flex-direction: column;
+    align-items:start;
+    gap: 5px;
+    
 }
 
 /* Footer */
