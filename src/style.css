@@ -461,12 +461,74 @@ footer a:hover, #menu-icon:hover{
     top: -2px;
 }
 
+/* Notes */
+#notes-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
 
+#notes-board{
+    background-color: var(--bg-color-light-blue);
+    margin: 10vh auto;
+    height: 80%;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2) inset;
+    /* display: flex; */
+    overflow: hidden;
+    padding: 25px;
+}
+
+.notes{
+    display: inline-block;
+    min-width: 100px;    
+    max-width: 300px;    
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.notes > .list-btns{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.notes-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#notes-board-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;       
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto; */
+    gap: 15px;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+#notes-board-list > .notes{
+    height: auto;
+}
 /* btns */
 .card-btns{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;    
+    align-items: center;
     margin-top: 5px;
 }
 
