@@ -3,14 +3,15 @@
 import "./style.css";
 
 // Templates
-// {
+
+// Projects
 //     <div class="cards-container">
 //             <div class="card">
 //                 <h2 class="card-title">
-//                     <label class="checkbox-container">
-//                         <input type="checkbox">
-//                         <span class="checkmark"></span>
-//                     </label>
+                    // <label class="checkbox-container">
+                    //     <input type="checkbox">
+                    //     <span class="checkmark"></span>
+                    // </label>
 //                     Project Name
 //                 </h2>
 //                 <p class="card-description"> 
@@ -36,4 +37,3 @@ import "./style.css";
 //                 </div>
 //             </div>               
 //         </div>        
-// }

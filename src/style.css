@@ -156,6 +156,10 @@ a{
     width: 20px;    
 }
 
+/* .btn-list-edit{
+    width: 50px;
+} */
+
 /* Set Fonts */
 nav *{
     font-family: var(--btn-text);
@@ -266,13 +270,71 @@ footer a:hover, #menu-icon:hover{
     display: flex;
     flex-direction: column;
     padding: 15px;
+    min-height: 80%;
+    width: 90%;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .list{
     display: flex;
     border-bottom:2px solid rgba(0, 0, 0, 0.3);
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
+    padding: 5px;   
+}
+
+.list-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-left: 5px solid var(--low-priority-blue); 
+}
+
+.list:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.list-details{
+    display: grid;
+    grid-template-columns: 300px auto;
+    /* gap: 50px;     */
+    text-indent: 10px;
+}
+
+.list-description{
+    /* display: none; */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.4);
+    max-width: 70%;
+    margin-right: 50px;    
+}
+
+.list-btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-basis: 350px;
+    min-width: 50px;
+    max-width: 60px;    
+}
+
+.list-btns div{
+    width: 30px;
+}
+
+.list-complete *, .project-complete *{
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 /* Cards */
@@ -362,9 +424,9 @@ footer a:hover, #menu-icon:hover{
 }
 
 #add-btn{
-    position: absolute;
+    position: sticky;
     left: 0;
-    bottom: 0;
+    bottom: 15px;
     display: flex;
     align-items: center;
     background-color: var(--accent-color-blue);
@@ -413,7 +475,7 @@ footer a:hover, #menu-icon:hover{
     appearance: none;
 }
 
-/* Checkbox */
+/* Checkbox  Styling */
 .checkbox-container{
     display: inline-block;
     position: relative;
@@ -475,3 +537,16 @@ footer a:hover, #menu-icon:hover{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    /* Styles for tablets and small desktops */
+    .list-description{
+        display: none;
+    }    
+
+    .list-btns{
+        justify-content: end;        
+    }
+  }
+  
