@@ -10,15 +10,12 @@ function retrieveProjects(){
         const projectCard = document.createElement("div");
         projectCard.classList.add("card");    
 
-        if(project.completion == true){
-            projectCard.classList.add("project-complete");
-        }
-
         const cardTitle = document.createElement("h2");
         cardTitle.classList.add("card-title");
         cardTitle.textContent = project.title;
-        const generateCheckbox = createCheckbox();
-        cardTitle.prepend(generateCheckbox);
+        const generateCheckbox = createCheckbox(project.completion, projectCard);
+        cardTitle.prepend(generateCheckbox);     
+        
 
         const cardDescription = document.createElement("p");
         cardDescription.classList.add("card-description");
@@ -73,14 +70,29 @@ function retrieveProjects(){
     main.prepend(cardsContainer)    
 }
 
-function createCheckbox(){
+function createCheckbox(projectCompletion, projectContainer){
     const label = document.createElement("label");
     label.classList.add("checkbox-container");
     const inputCheckbox = document.createElement("input");
     inputCheckbox.type = "checkbox";
+    checkStatus()
+    inputCheckbox.addEventListener("input", function(){
+        projectCompletion = projectCompletion == true ? false : true;
+        checkStatus()
+    })
     const checkmark = document.createElement("span");
     checkmark.classList.add("checkmark");
     label.append(inputCheckbox, checkmark);
+
+    function checkStatus(){
+        if(projectCompletion == true){
+            inputCheckbox.checked = "true"
+            projectContainer.classList.add("project-complete");
+        }else{
+            inputCheckbox.removeAttribute("checked");
+            projectContainer.classList.remove("project-complete");
+        }
+    }
 
     return label
 }
