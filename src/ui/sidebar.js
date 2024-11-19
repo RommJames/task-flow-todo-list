@@ -1,6 +1,7 @@
 // Get Img
 import getRJLogo from "./../media/rj-logo-3-nobg.png";
 import getMenuIcon from "./../media/icons/menu.svg";
+import { selectedNavList, tabTitleHTML } from "..";
 
 // GET DOM
 const sidebarHTML = document.querySelector("#side-bar");
@@ -9,7 +10,6 @@ const sidebarHTML = document.querySelector("#side-bar");
 // Initialize
 const navLists = ["Projects", "Routines", "Listing", "Schedules", "AllTasks", "Completed"];
 const portfolioLink = "https://rommjames.github.io/About-Me/";
-let selectedNavList = ""
 
 function sideBar(){
     const sideBarBtns = document.createElement("div");
@@ -56,7 +56,8 @@ function clickNavList(parentList, createdList, selectedList){
         
         if(list === selectedList){
             createdList.classList.add("li-active");
-            selectedNavList = selectedList;
+            // selectedNavList = selectedList;
+            tabTitleHTML.textContent = selectedList;
         }
 
     });

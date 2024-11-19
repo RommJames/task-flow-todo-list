@@ -1,14 +1,18 @@
 // Main Index
 // --- Imports
+import generatedData from "./generated-data/projects.json"
 import "./style.css";
 import { sideBar } from "./ui/sidebar";
 import { retrieveProjects } from "./ui/view-project";
 // --- Get DOM
 export const main = document.querySelector("main");
-export const notesValueHTML = document.querySelector("notes-value");
+export const notesValueHTML = document.querySelector("#notes-value");
+export const descriptionValueHTML = document.querySelector("#description-value")
+export const tabTitleHTML = document.querySelector(".tab-title");
+export let selectedNavList = "Project";
 
 sideBar()
-retrieveProjects()
+retrieveProjects(generatedData)
 
 
 // ----- Templates
