@@ -1,9 +1,14 @@
 // Main Index
-
+// --- Imports
 import "./style.css";
 import { sideBar } from "./ui/sidebar";
+import { retrieveProjects } from "./ui/view-project";
+// --- Get DOM
+export const main = document.querySelector("main");
+export const notesValueHTML = document.querySelector("notes-value");
 
 sideBar()
+retrieveProjects()
 
 
 // ----- Templates
@@ -287,3 +292,24 @@ sideBar()
         //         </div>              
         //     </form>
         // </div>
+
+// -- Side Nav Bar
+    //     <div id="side-bar-btns">
+    //     <label for="lbl-menu-icon">
+    //         <img src="media/icons/menu.svg" alt="menu-icon" id="menu-icon">
+    //     </label>            
+    //     <nav>
+    //         <ul>
+    //             <li id="li-projects" class="li-active"> Projects </li>
+    //             <li id="li-routines">Routines</li>
+    //             <li id="li-listing">Listing</li>
+    //             <li id="li-schedules">Schedules</li>
+    //             <li id="li-all-tasks">All Tasks</li>
+    //         </ul>
+    //     </nav>
+    // </div>
+    // <footer>
+    //     <a href="https://rommjames.github.io/About-Me/" target="_blank">
+    //         <img src="media/rj-logo-3-nobg.png" alt="my-logo" class="logo">
+    //     </a>
+    // </footer>

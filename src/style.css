@@ -426,7 +426,7 @@ footer a:hover, #menu-icon:hover{
     margin: 10px 0px;
 }
 
-#priority-level-value, .priority-level-option{
+#priority-level-value, .priority-level-option, .priority-level-value{
     padding: 1px 15px;
     display: inline-block;    
 }
@@ -641,9 +641,9 @@ footer a:hover, #menu-icon:hover{
 }
 
 #add-btn{
-    position: sticky;
-    left: 0;
-    bottom: 15px;
+    position: fixed;
+    left: 10vh;
+    bottom: 70px;
     display: flex;
     align-items: center;
     background-color: var(--accent-color-blue);

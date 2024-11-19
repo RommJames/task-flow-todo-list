@@ -1,0 +1,178 @@
+[
+    {
+      "completion": true,
+      "title": "Project Launch",
+      "description": "Final preparation for product launch.",
+      "dueDate": "2024-11-20",
+      "priority": "High",
+      "notes": [
+        { "comment": "Launch plan reviewed with the team." },
+        { "comment": "Final checks on the website before going live." }
+      ],
+      "tasks": [
+        {
+          "completion": true,
+          "title": "Prepare Marketing Materials",
+          "description": "Design and finalize promotional content.",
+          "dueDate": "2024-11-18",
+          "priority": "High",
+          "notes": [
+            { "comment": "All graphics approved by the marketing team." },
+            { "comment": "Prepare email template for the launch." }
+          ]
+        },
+        {
+          "completion": false,
+          "title": "Confirm Vendor Deliveries",
+          "description": "Ensure all supplies are on schedule for delivery.",
+          "dueDate": "2024-11-19",
+          "priority": "Medium",
+          "notes": [
+            { "comment": "Need to confirm delivery times with vendors." },
+            { "comment": "Track shipments and get updates." }
+          ]
+        }
+      ]
+    },
+    {
+      "completion": false,
+      "title": "Team Onboarding",
+      "description": "Complete onboarding process for new hires.",
+      "dueDate": "2024-12-01",
+      "priority": "Medium",
+      "notes": [
+        { "comment": "Ensure all documents are signed by new hires." },
+        { "comment": "Prepare training materials." }
+      ],
+      "tasks": [
+        {
+          "completion": false,
+          "title": "Prepare Welcome Package",
+          "description": "Prepare welcome kits for new employees.",
+          "dueDate": "2024-11-25",
+          "priority": "Low",
+          "notes": [
+            { "comment": "Check inventory of company-branded items." },
+            { "comment": "Coordinate delivery for kits." }
+          ]
+        },
+        {
+          "completion": false,
+          "title": "Create Training Schedule",
+          "description": "Set up training sessions for new hires.",
+          "dueDate": "2024-11-28",
+          "priority": "High",
+          "notes": [
+            { "comment": "Coordinate with department heads for training." },
+            { "comment": "Prepare training agenda and materials." }
+          ]
+        }
+      ]
+    },
+    {
+      "completion": false,
+      "title": "Website Redesign",
+      "description": "Overhaul the company website for better UX.",
+      "dueDate": "2025-01-15",
+      "priority": "High",
+      "notes": [
+        { "comment": "Meeting with web design agency scheduled." },
+        { "comment": "Prepare list of desired website features." }
+      ],
+      "tasks": [
+        {
+          "completion": false,
+          "title": "Select Design Agency",
+          "description": "Choose a design agency to lead the project.",
+          "dueDate": "2024-11-30",
+          "priority": "High",
+          "notes": [
+            { "comment": "Review proposals from shortlisted agencies." },
+            { "comment": "Schedule interviews with the agencies." }
+          ]
+        },
+        {
+          "completion": false,
+          "title": "Define Website Features",
+          "description": "Decide on key features to include on the website.",
+          "dueDate": "2024-12-10",
+          "priority": "Medium",
+          "notes": [
+            { "comment": "Prepare list of core features with the team." },
+            { "comment": "Identify target audience and needs." }
+          ]
+        }
+      ]
+    },
+    {
+      "completion": false,
+      "title": "Quarterly Sales Review",
+      "description": "Review sales performance for the last quarter.",
+      "dueDate": "2024-11-25",
+      "priority": "High",
+      "notes": [
+        { "comment": "Prepare the sales report for the team meeting." },
+        { "comment": "Follow up with regional sales managers." }
+      ],
+      "tasks": [
+        {
+          "completion": false,
+          "title": "Prepare Sales Data",
+          "description": "Gather and compile sales data for the review.",
+          "dueDate": "2024-11-22",
+          "priority": "High",
+          "notes": [
+            { "comment": "Confirm data accuracy with the analytics team." },
+            { "comment": "Include year-over-year comparisons." }
+          ]
+        },
+        {
+          "completion": false,
+          "title": "Schedule Review Meeting",
+          "description": "Organize and schedule the review meeting with stakeholders.",
+          "dueDate": "2024-11-23",
+          "priority": "Medium",
+          "notes": [
+            { "comment": "Send calendar invites to all stakeholders." },
+            { "comment": "Prepare agenda for the meeting." }
+          ]
+        }
+      ]
+    },
+    {
+      "completion": true,
+      "title": "Client Proposal Submission",
+      "description": "Submit a proposal for a new client project.",
+      "dueDate": "2024-11-19",
+      "priority": "High",
+      "notes": [
+        { "comment": "Proposal was reviewed by the legal team." },
+        { "comment": "Client has been notified of submission." }
+      ],
+      "tasks": [
+        {
+          "completion": true,
+          "title": "Draft Proposal Document",
+          "description": "Write and review the proposal for the client.",
+          "dueDate": "2024-11-17",
+          "priority": "High",
+          "notes": [
+            { "comment": "Proposal finalized and sent to the client." },
+            { "comment": "Review feedback from the legal team." }
+          ]
+        },
+        {
+          "completion": true,
+          "title": "Client Meeting",
+          "description": "Hold a meeting to discuss proposal details.",
+          "dueDate": "2024-11-18",
+          "priority": "Medium",
+          "notes": [
+            { "comment": "Meeting was successful, client has no further questions." },
+            { "comment": "Agreement on terms reached during the meeting." }
+          ]
+        }
+      ]
+    }
+  ]
+  
