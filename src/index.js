@@ -1,6 +1,10 @@
 // Main Index
 
 import "./style.css";
+import { sideBar } from "./ui/sidebar";
+
+sideBar()
+
 
 // ----- Templates
 // Projects
